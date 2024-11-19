@@ -75,3 +75,5 @@ console.log(player3.sayHi()); // sayHi property was made under the Person protot
 
 // DO NOT USE THIS:      Player.prototype = Person.prototype
 // this will directly set player to directly refer to person.prototype
+
+console.log(player3.__proto__.__proto__.__proto__); // null, the prototype chain is only 2 links long, the third link is already null. Reaching the end of the prototype chain
