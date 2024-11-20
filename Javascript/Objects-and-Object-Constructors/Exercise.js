@@ -1,8 +1,8 @@
 // ---------- Object Constructors ----------
-function Player(name, marker){
+function Player(name, marker) {
     this.name = name;
     this.marker = marker;
-    this.sayName = function(){
+    this.sayName = function () {
         return `And his name is ${this.name}`;
     }
 }
@@ -17,12 +17,12 @@ console.log(``);
 
 
 // ---------- Exercise 1 ----------
-function Book(title, author, pages, haveRead){
+function Book(title, author, pages, haveRead) {
     this.title = title;
     this.author = author;
-    this.pages = pages; 
+    this.pages = pages;
     this.haveRead = haveRead;
-    this.info = function(){
+    this.info = function () {
         return `${title} by ${author}, ${pages} pages, ${haveRead}`
     }
 }
@@ -39,7 +39,7 @@ console.log(`Object.getPrototypeOf(player1) === Player.prototype is equal to`)
 console.log(Object.getPrototypeOf(player1) === Player.prototype)
 console.log(player1.__proto__ === Player.prototype) // DO NOT USE. This is a non-standard and deprecated version of Object.getPrototype.player1
 
-Player.prototype.sayHello = function(){
+Player.prototype.sayHello = function () {
     return `Hello ${this.name}`;
 }
 
@@ -48,15 +48,15 @@ console.log("player2.sayHello() = " + player2.sayHello());
 
 
 // ---------- Prototypal Inheritance ----------
-function Person(name){
+function Person(name) {
     this.name = name;
 }
 
-Person.prototype.sayHi = function(){
+Person.prototype.sayHi = function () {
     return `Hi, I am ${this.name}!!!`
 }
 
-Player.prototype.getMarker = function(){
+Player.prototype.getMarker = function () {
     return `My marker is ${this.marker}.`
 }
 
