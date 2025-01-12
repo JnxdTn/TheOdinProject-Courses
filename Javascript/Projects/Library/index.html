@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project: Library</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="library">
+      <h1>Project: Library</h1>
+      <h3>Library Books</h3>
+      <div class="booksDisplay">
+        <div class="books"></div>
+        <div class="bookDisplayButtons">
+          <button class="refresh">Refresh Book Display</button>
+          <button class="add">Add Book to Library</button>
+        </div>
+      </div>
+      <dialog>
+        <form id="registerBook">
+          <h3>Book Registration</h3>
+          <label for="bookTitle">
+            <p>Book Title:</p>
+            <input type="text" id="bookTitle" name="bookTitle" required/>
+          </label>
+          <label for="bookAuthor">
+            <p>Book Author:</p>
+            <input type="text" id="bookAuthor" name="bookAuthor" required/>
+          </label>
+          <label for="bookGenre">
+            <p>Book Genre:</p>
+            <input type="text" id="bookGenre" name="bookGenre" required/>
+          </label>
+          <div class="registerBookFormButtons">
+            <button type="submit" form="registerBook">Register Book</button>
+            <button class="closeButton">Close</button>
+          </div>
+        </form>
+      </dialog>
+    </div>
+  </body>
+</html>
